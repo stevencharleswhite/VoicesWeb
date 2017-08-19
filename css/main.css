@@ -1,0 +1,125 @@
+﻿body {
+    color: #666666;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    margin: 0 0 0 115px;
+    max-width: 670px;
+}
+
+pre {
+    font-size: medium;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        margin: 0 1em;
+        max-width: none;
+    }
+}
+
+header {
+    text-align: left;
+}
+
+p, li {
+    line-height: 170%;
+}
+
+p {
+    margin: 0.9em 0 0.9em 0;
+}
+
+.mainmenu, .submenu, .copyrightNotice {
+    text-align: right;
+}
+
+.mainmenu {
+    margin-top: 1em;
+}
+
+.submenu {
+    margin-top: 0;
+}
+
+.mainmenu, .submenu, .h1, .h2 {
+    margin-bottom: 0.2em;
+}
+
+.mainmenu {
+    font-size: 105%;
+}
+
+h1 {
+    font-size: 140%;
+    margin: 1.3em 0 0 0;
+}
+
+h2 {
+    font-size: 110%;
+    margin: 0.3em 0 0 0;
+}
+
+#photo {
+    float: right;
+    margin-bottom: 3em;
+}
+
+footer {
+    color: #999999;
+    font-size: 90%;
+    margin: 4.5em 0 1em 0;
+}
+
+img.centered_img {
+    border-style: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+audio.centered_audio {
+    border-style: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*table.interval_table, table.chord_table {
+    border-color: #AAAAAA;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+}
+
+/*table.interval_table {
+    width: 10em;
+}
+
+table.chord_table {
+    width: 10em;
+}*/
+
+tr.interval_tr_col {
+    background-color: #EEEEEE;
+}
+
+th.interval_th {
+    text-align: left;
+}
+
+td {
+    padding: 0 1em 0 0.2em;
+}
+
+div.gray_block {
+	background-color: #EEEEEE;
+	color: #444444;
+	padding: 0 0.9em 0 0.9em
+}
+
+p.gray_block_first_p {
+	padding-top: 0.9em
+}
+
+p.gray_block_last_p {
+	padding-bottom: 0.9em
+}

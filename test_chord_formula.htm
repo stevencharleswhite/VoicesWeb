@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/tests.css" />
+    <script src="js/note_and_interval.js"></script>
+    <script src="js/scale_and_chord.js"></script>
+    <script src="js/picker_base.js"></script>
+    <script src="js/picker_formula_degree.js"></script>
+    <script src="js/test_base.js"></script>
+    <script src="js/test_chord_formula.js"></script>
+    <!--[if lt IE 9]>
+        <script src="js/ifielt9.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <h1>Chord formulas rooted on 1</h1>
+    <ul class="ulWithSelectableItems">
+        <li id="settingSeventhChords" class="correct">include seventh chords</li>
+    </ul>
+    <p><span id="questionStats"></span><span id="responseStats"></span></p>
+    <h2 id="questionLineOne"></h2>
+    <div style="font-size:1.8em" id="questionLineTwo"></div>
+    <div id="thePickerDiv" class="pickerDiv" style="text-align:center"><canvas id="thePickerCanvas">Your browser doesn't support the HTML5 canvas element</canvas></div>
+    <div id="selectionMessage" style="text-align:center; margin-bottom:0.2em"></div>
+    <div style="text-align:center">
+        <button type="button" id="newQuestionSeriesButton" style="height:2.5em; display:none" onclick="newQuestionSeriesBase()">new question series</button>
+        <button type="button" id="submitSelectionButton" style="height:2.5em" onclick="testSubmitSelection()">submit selection</button>
+        <button type="button" id="backspaceSelectionButton" style="height:2.5em" onclick="pickerBackspaceSelectionBase()">backspace</button>
+        <button type="button" id="clearSelectionButton" style="height:2.5em" onclick="pickerClearSelectionBase()">clear selection</button>
+    </div>
+</body>
+</html>

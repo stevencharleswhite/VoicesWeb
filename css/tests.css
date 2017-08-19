@@ -1,0 +1,85 @@
+﻿canvas.touchActionPanY {
+    touch-action: pan-y;
+}
+
+canvas.touchActionNone {
+    touch-action: none;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.6em 0 0.6em 1.5em;
+    padding: 0;
+}
+
+    ul.ulWithSelectableItems li {
+        margin: 0.35em 0;
+        padding: 0.3em 0.3em 0.3em 2.5em;
+        position: relative;
+        border: 1px solid transparent;
+    }
+
+        ul.ulWithSelectableItems li:hover {
+            background-color: lightgray;
+        }
+
+        ul.ulWithSelectableItems li.correct:before {
+            content: '';
+            width: 1.5em;
+            height: 1.5em;
+            border: solid 2px darkgreen;
+            position: absolute;
+            left: 0.2em;
+            top: 0.2em;
+        }
+
+        ul.ulWithSelectableItems li.correct:after {
+            content: '';
+            width: 0.8em;
+            height: 0.45em;
+            border: solid darkgreen;
+            border-width: 0 0 0.4em 0.4em;
+            position: absolute;
+            left: 0.56em;
+            top: 0.55em;
+            transform: rotate(-45deg);
+        }
+
+        ul.ulWithSelectableItems li.incorrect:before {
+            content: '';
+            width: 1.5em;
+            height: 1.5em;
+            border: solid 2px darkred;
+            position: absolute;
+            left: 0.2em;
+            top: 0.2em;
+        }
+
+        ul.ulWithSelectableItems li.incorrect:after {
+            content: '×';
+            font-size: 2em;
+            font-weight: 900;
+            color: darkred;
+            position: absolute;
+            left: 0.1em;
+            top: 0.05em;
+        }
+
+body.correct_answer {
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+    background-color: rgba(0, 100, 0, 0.8);
+}
+
+body.incorrect_answer {
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+    background-color: rgba(139, 0, 0, 0.8);
+}
+
+body.reset_answer {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: rgba(255, 255, 255, 0);
+}
